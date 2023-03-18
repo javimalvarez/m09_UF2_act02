@@ -1,0 +1,88 @@
+*{
+    font-family: sans-serif;
+    color:white;
+}
+
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1d/Forest-931706_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contenedor>img{
+    width: 300px;
+    margin:20px;
+    margin-top:10px;
+    padding:0;
+    border: solid white 3px;
+}
+.contenedor{
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor>p{
+    width: 300px;
+    margin:20px;
+    margin-bottom:10px;
+    padding:0;
+    font-weight:bold;
+    text-align: center;
+}
+
+.contenedor>audio{
+    width: 300px;
+    margin:20px;
+    margin-top:10px;
+    padding:0;
+}
+
+h1{
+    text-align:center;
+}
+
+.imagen1:hover{
+    transform: translate(20px) scale(0.5);
+}
+
+@keyframes animacion_imagen{
+    0%{
+        transform: scale(1.5);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(-45deg);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
+.imagen5:hover{
+    animation: animacion_imagen;
+    animation-duration: 3s;
+}
+
+footer{
+    justify-content: center;
+    text-align: center;
+    margin-top:250px;
+    padding: 5px;
+}
+
+a>span:hover{
+    color: aqua;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
+
+#palabra{
+    font-size: 20px;
+}
